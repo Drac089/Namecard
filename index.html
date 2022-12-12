@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Namecard</title>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
+<style>* {                  /* CSS Reset*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+#mobil-card {
+width: 480px;
+max-width: calc(100vw - 10px);
+background-color: hsla(0, 0%, 100%, .5);
+border-radius: 4px;
+box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+html {
+padding: 10px;
+}
+body {
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-image: url("pictures/background.jpg");   
+background-repeat: no-repeat;
+background-position: center center; 
+background-attachment: fixed;   /*a kép ne gördüljön együtt az oldallal.*/
+background-size: cover; /*sor azt mondja a böngészőnek, hogy mindig méretezze át úgy a háttérképet, hogy az lefedje a teljes aktuális hátteret.*/
+
+}
+#profile-image{
+margin-top: -60px;
+}
+img {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+padding: 1px;
+background-color: #666;
+filter: grayscale(50%);
+transition: all 0.5s ease-in-out;
+box-shadow: 4px 5px 5px #aaa;
+}
+img:hover {
+transform: scale(1.3);
+filter: grayscale(10%);
+}
+#content {
+border-top: 1px solid hsla(0, 0%, 30%, .3);
+}
+#head {
+text-align: center;
+width: 90%;
+margin: 0 auto;
+}
+ul {
+  list-style-type: none; /*kikapcsolja a listaelemek típusát*/
+}
+
+.section-links li {
+  display: inline; /*egymás mellé helyezi az egymás alá írott listaelemeket*/
+}
+#head {
+margin-bottom: 5%;
+}
+#p-about, .section-links {
+padding: 5% 10%;
+}
+.section-links{
+border-top: 1px solid hsla(0, 0%, 30%, .5);
+width: 90%;
+margin: 0 auto;
+text-align: center;
+}
+/*.section-links2{
+font-family: 'Barlow Condensed', sans-serif;
+float:right;
+
+margin-top: -61px;
+}*/
+h1 {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 30px;
+text-shadow: 4px 5px 5px #aaa;
+}
+h2{
+font-family: 'Barlow Condensed', sans-serif;
+margin-bottom: 5px;
+margin-left: 8px;
+}
+#p-about{
+font-family: 'Barlow Condensed', sans-serif;
+}
+.tag:hover {
+color: gray;
+}</style>
+</head>
+<body>
+<div id="mobil-card"> 
+    <div id="head">   
+       <div id="profile-image">
+       <img src="pictures/image.jpg" alt="photo">
+       </div>
+       <div id="name-headline">
+       <h1>Peter Drake</h1>
+       <h2>Junior Developer</h2>
+       <p><a href="https://www.google.com/maps/place/Budapest/@47.4813602,18.9902189,11z/data=!3m1!4b1!4m5!3m4!1s0x4741c334d1d4cfc9:0x400c4290c1e1160!8m2!3d47.497923!4d19.0402508?hl=hu" title="Budapest"><i class="fa fa-map-marker"></i></a> Budapest, HU</p>
+       <p>Tel: 06/20 ***-****</p>
+       <p>E-mail:<a href="mailto:peter.drake@gmail.com">peter.drake@gmail.com</a></p>
+       </div>
+    </div>
+    <div id="content">
+       <p id="p-about">"I like to create, sometimes I can get so immersed in a task that I don't even notice that 5 hours have passed. I still have room for improvement, but the point is that I'm on my way and I don't plan to stop at the finish line."
+       </p>
+       <section class="section-links">
+       <h2><u>Contact me:</u></h2>
+       <ul>
+         <li><a href="" title="Intagram" class="social-icon"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>&nbsp
+         <li><a href="" title="Facebook" class="social-icon"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>&nbsp
+         <li><a href="" title="Twitter" class="social-icon"> 
+        <i class="fa fa-2x fa-twitter" aria-hidden="true"> 
+        </i></a></li>
+      </ul>
+       </section>
+       <!--<section class="section-links2">
+        <ul>
+          <li>Tel: 06/20 ***-****</li>
+          <li>E-mail:<a href="mailto:peter.drake@gmail.com">peter.drake@gmail.com</a></li>
+        </ul>
+       </section>-->
+   </div>
+</div>
+
+</body>
+</html>
